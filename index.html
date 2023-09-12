@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>minkyu's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for Max who will change the world by code"
+    />
+    <meta name="author" content="MaxMillion" />
+    <link rel="shortcut icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/96e3e46ef0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-mug-hot"></i> 
+        <a href="#">Lee Minkyu</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="imgs/profile.png"
+          alt="profile photo"
+          class="home__avatar"/> 
+        <h1 class="home__title" id="shadow">Hello, <br />I'm Lee Minkyu</h1>
+        <h2 class="home__description" id="shadow">
+          Slow starter but forms large clumps with time
+        </h2>
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section__container">
+      <h1>About me</h1>
+      <p>
+        경험 및 기술 스택
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h2 class="major__title">Front-end</h2>
+          <div class="major__description">
+            HTML, CSS, JavaScript
+          </div>
+        </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <p class="major__description">
+            Java, Rest APIs
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          Experience with all phases of the software life-cycle. Passion for
+          learning new technologies. Capable of working within a team environment
+          and independently. Ability to plan and time schedule, work under strict
+          time pressure and adapt quickly when needed.
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JAVA</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>99%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 99%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Eclipse</span></li>
+                <li><span>Visual Studio Code</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+    <div class="section__container">
+      <h1>My work</h1>
+      <div class="work__categories">
+        <button class="category__btn" data-filter="*">
+          All <span class="category__count">5</span>
+        </button>
+        <button class="category__btn selected" data-filter="projects">
+          Projects <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="session">
+          Session <span class="category__count">2</span>
+        </button>
+      </div>
+      <div class="work__projects">
+        <a href="https://bronze-deer-4dd.notion.site/DBO-League-31c9669e7ab4451582769903950934d5?pvs=4" target="_blank" class="project" data-type="projects">
+          <img class="project__img" src="https://user-images.githubusercontent.com/122972729/262581716-4f908950-13e4-42ee-9256-4bb2f303ae62.png" alt="" />
+          <div class="project__description">
+            <h3>DBO LEAGUE</h3>
+            <span>취업캠프 프로젝트 3</span>
+            <span>2023.08.10 ~ 2023.08.23</span>
+          </div>
+        </a>
+        <a href="https://bronze-deer-4dd.notion.site/ECO-LINK-6d7e16374f764bd49500821e08e86ab7?pvs=4" target="_blank" class="project" data-type="projects">
+          <img class="project__img" src="https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F3b9dbe6b-26c0-461b-aa8b-bb0c2c93ccd7%2Ff4832369-5546-40ae-b567-caf1f149690b%2Flogo2.png?table=block&id=6d7e1637-4f76-4bd4-9500-821e08e86ab7&spaceId=3b9dbe6b-26c0-461b-aa8b-bb0c2c93ccd7&width=250&userId=8a7804e5-2089-47b8-a62e-c62cae37f31d&cache=v2" alt="" />
+          <div class="project__description">
+            <h3>ECO LINK</h3>
+            <span>취업캠프 프로젝트 2</span>
+            <span>2023.06.26 ~ 2023.07.31</span>
+          </div>
+        </a>
+        <a href="https://bronze-deer-4dd.notion.site/7adafd9217ec48b1b5eeb071dd56740e?pvs=4" target="_blank" class="project" data-type="projects">
+          <img class="project__img" src="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f5e8-fe0f.svg" alt="" />
+          <div class="project__description">
+            <h3>Kakaotalk clone project</h3>
+            <span>취업캠프 프로젝트 1</span>
+            <span>2023.05.08 ~ 2023.05.10</span>
+            <span>2023.06.01 ~ 2023.06.04</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="session">
+          <img class="project__img" src="imgs/projects/multicampus.jpg" alt="" />
+          <div class="project__description">
+            <h3>풀스택 개발자 취업캠프(Java)</h3>
+            <span>멀티캠퍼스</span>
+            <span>2023.03.13 ~ 2023.08.24</span>
+          </div>
+        </a>
+        <a href="" class="project" data-type="session">
+          <img class="project__img" src="imgs/projects/42seoul.png" alt="" />
+          <div class="project__description">
+            <h3>42seoul La Piscine</h3>
+            <span>이노베이션 아카데미</span>
+            <span>2021.05.03 ~ 2021.05.31</span>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">quler101@gmail.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/MKLEEv" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+ 
+        <!-- <a href="#" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>  -->
+    
+      </div>
+      <p class="contact__rights">
+        2019 PeachCoffee - All rights reserved
+      </p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
